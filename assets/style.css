@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: auto;
+  margin-inline: auto;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #3d72b6;
+  background-image: url(../img/purepng.com-snailshellanimalsnailmolluscs-981524644180ipl9y.png),
+    url(../img/IMG_9514_Skiers-on-DV-Corduroy-website.jpeg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%, 50% 50%;
+  background-size: 200px, cover;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #0c0c0c;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  border-bottom: 20px;
+  border-color: red;
+}
+
+.main-page {
+  color: azure;
+}
+
+.nav {
+  background-color: #ada2a477;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-top {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-top-item-link {
+  text-transform: uppercase;
+  background-color: #180450c2;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main {
+  background-color: aqua;
+  padding: 5px;
+}
+
+.readmore:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a[href="articles/articleone.html#comments"] {
+  background-color: gray;
+  padding: 5px;
+}
+
+a[href="articles/articletwo.html#comments"] {
+  background-color: gray;
+  padding: 5px;
+}
+
+a[href="articles/articletree.html#comments"] {
+  background-color: grey;
+  padding: 5px;
+}
+
+.accent {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  border-bottom: 3px dotted;
+}
+
+.accent>a {
+  text-decoration: none;
+  color: rgb(18, 221, 89);
+}
+
+.letter p::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  color: orange;
+  font-family: Arial;
+}
+
+.head {
+  text-align: center;
+  color: gray;
+  text-decoration: solid;
+}
+
+.new::after {
+  content: "new";
+  background-color: orange;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 70%;
+}
+
+.marker {
+  list-style: outside url(../img/fav_heart.png);
+  font-size: 2rem;
+  background-color: #3d71b6c7;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 1em 2em;
+  color: white;
+  gap: 10px;
+  width: 100%;
+}
+
+.marker-sm {
+  list-style: outside url(../img/shopping_trolley.png);
+  font-size: 1rem;
+  background-color: red;
+  opacity: 1;
+  max-width: 992px;
+  padding: 1em 2em;
+  gap: 5px;
+}
+
+.new::after {
+  content: "new";
+}
+
+.bg-gallery {
+  background-color: rgb(255, 193, 78);
+  background-image: url(../img/texture3.jpg);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.gallery {
+  display: flex;
+  padding: 20px;
+}
+
+.gallery img {
+  border: 20px solid olive;
+  padding-top: 20px;
+}
+
+.gallery img:hover {
+  border: 20px solid transparent;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: lightsteelblue;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.footer {
+  background-color: lightcoral;
+  padding: 5px 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.content {
+  min-height: calc(100vh - 100px - 100px);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
